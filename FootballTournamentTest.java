@@ -1,3 +1,4 @@
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -13,19 +14,19 @@ public class FootballTournamentTest {
         tournament.addMatch("Match 3", "Team E", "Team F");
         tournament.addMatch("Match 4", "Team G", "Team H");
 
-        String expectedOutput = "\t\tTeam D\n" +
-                                "\tMatch 2\n" +
-                                "\t\tTeam C\n" +
-                                "Quarterfinals\n" +
-                                "\t\tTeam B\n" +
-                                "\tMatch 1\n" +
-                                "\t\tTeam A\n" +
-                                "\t\tTeam H\n" +
-                                "\tMatch 4\n" +
-                                "\t\tTeam G\n" +
-                                "\t\tTeam F\n" +
-                                "\tMatch 3\n" +
-                                "\t\tTeam E\n";
+        String expectedOutput = "\t\tTeam D\n"
+                + "\tMatch 2\n"
+                + "\t\tTeam C\n"
+                + "Quarterfinals\n"
+                + "\t\tTeam B\n"
+                + "\tMatch 1\n"
+                + "\t\tTeam A\n"
+                + "\t\tTeam H\n"
+                + "\tMatch 4\n"
+                + "\t\tTeam G\n"
+                + "\t\tTeam F\n"
+                + "\tMatch 3\n"
+                + "\t\tTeam E\n";
 
         Assertions.assertEquals(expectedOutput, getActualOutput(tournament));
     }
